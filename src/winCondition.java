@@ -3,8 +3,8 @@ import javax.swing.JOptionPane;
 public class winCondition {
     public static void winCon() {
         Trivia triviaObj = new Trivia();
-        int corrects = triviaObj.correctAnswers;
-        int wrongs = triviaObj.wrongAnswers;
+        int corrects = triviaObj.getCorrects;
+        int wrongs = triviaObj.getWrongs;
         int total = corrects + wrongs;
         JOptionPane.showMessageDialog(null, corrects);
         /*int percentage = corrects / total * 100;

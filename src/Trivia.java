@@ -3,8 +3,8 @@ import javax.swing.JOptionPane;
 
 public class Trivia {
     //variables
-    public int correctAnswers; //counts correct answers
-    public int wrongAnswers; //counts wrong answers
+    private int correctAnswers; //counts correct answers
+    private int wrongAnswers; //counts wrong answers
 
     //each set of options for each question
     Object[] options = {"1967", "1972", "1963", "1969"}; //answer options for first question
@@ -78,8 +78,7 @@ public class Trivia {
         JOptionPane.showMessageDialog(null, "correct! " + "Correct answers: " + correctAnswers + " Wrong answers: " + wrongAnswers);
 
 
-        this.correctAnswers = correctAnswers;
-        this.wrongAnswers = wrongAnswers;
+
     }
-    
+
 }
