@@ -3,8 +3,8 @@ import javax.swing.JOptionPane;
 
 public class Trivia {
     //variables
-    private int correctAnswers; //counts correct answers
-    private int wrongAnswers; //counts wrong answers
+    public static int correctAnswers; //counts correct answers
+    public static int wrongAnswers; //counts wrong answers
 
     //each set of options for each question
     Object[] options = {"1967", "1972", "1963", "1969"}; //answer options for first question
@@ -23,7 +23,7 @@ public class Trivia {
             wrongAnswers++; //increase var wrongAnswers by 1
         }
         correctAnswers++; //increases var correctAnswers by 1
-        JOptionPane.showMessageDialog(null, "correct! " + "Correct answers: " + correctAnswers + ", Wrong answers: " + wrongAnswers); //correct message and displays correct and wrong answers
+        JOptionPane.showMessageDialog(null, "Correct! " + "Correct answers: " + correctAnswers + ", Wrong answers: " + wrongAnswers); //correct message and displays correct and wrong answers
         question = "How many countries are there in the world? "; //changes question variable to second question
         answer = 2; //changes answer variable to 3rd answer
 
@@ -34,7 +34,7 @@ public class Trivia {
             wrongAnswers++; //increases wrong answers by 1
         }
         correctAnswers++; //increases correct answers by 1
-        JOptionPane.showMessageDialog(null, "correct! " + "Correct answers: " + correctAnswers + " Wrong answers: " + wrongAnswers);
+        JOptionPane.showMessageDialog(null, "Correct! " + "Correct answers: " + correctAnswers + " Wrong answers: " + wrongAnswers);
         question = "How many bones are in the human body? "; //changes question variable for 3rd question
         answer = 206; //changes answer variable for 3rd question
 
@@ -47,7 +47,7 @@ public class Trivia {
         }
 
         correctAnswers++; //increases correct answers by 1
-        JOptionPane.showMessageDialog(null, "correct! " + "Correct answers: " + correctAnswers + " Wrong answers: " + wrongAnswers);
+        JOptionPane.showMessageDialog(null, "Correct! " + "Correct answers: " + correctAnswers + " Wrong answers: " + wrongAnswers);
         question = "Which direction does the sun rise from? ";
         answer = 1;
 
@@ -56,7 +56,7 @@ public class Trivia {
             wrongAnswers++; //increases wrong answers by 1
         }
         correctAnswers++; //increases correct answers by 1
-        JOptionPane.showMessageDialog(null, "correct! " + "Correct answers: " + correctAnswers + " Wrong answers: " + wrongAnswers); 
+        JOptionPane.showMessageDialog(null, "Correct! " + "Correct answers: " + correctAnswers + " Wrong answers: " + wrongAnswers); 
         question = "What is the smallest planet in the solar system? ";
         answer = 2;
 
@@ -66,7 +66,7 @@ public class Trivia {
             wrongAnswers++; //increases wrong answers by 1
         }
         correctAnswers++; //increases correct answers by 1
-        JOptionPane.showMessageDialog(null, "correct! " + "Correct answers: " + correctAnswers + " Wrong answers: " + wrongAnswers);
+        JOptionPane.showMessageDialog(null, "Correct! " + "Correct answers: " + correctAnswers + " Wrong answers: " + wrongAnswers);
         question = "What is the most populated country? ";
         answer = 3;
 
@@ -75,8 +75,7 @@ public class Trivia {
             wrongAnswers++; //increases wrong answers by 1
         }
         correctAnswers++; //increases correct answers by 1
-        JOptionPane.showMessageDialog(null, "correct! " + "Correct answers: " + correctAnswers + " Wrong answers: " + wrongAnswers);
-
+        JOptionPane.showMessageDialog(null, "Correct! " + "Correct answers: " + correctAnswers + " Wrong answers: " + wrongAnswers);
 
 
     }
